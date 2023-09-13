@@ -1,6 +1,7 @@
 @use "hero";
 @use "_variables";
 @use "_shows";
+@use "_plans";
 
 @font-face {
   font-family: Avenir;
@@ -66,21 +67,30 @@ body {
   @include title(28px);
 }
 
-.button--big {
+.button {
   background-color: variables.$buttonColor;
   color: variables.$textSecondaryColor;
   font-size: 18px;
   line-height: 18px;
   width: 100%;
   border-radius: 4px;
-  height: 68px;
   text-transform: uppercase;
   border: none;
-  padding: 20px 33px;
   transition: all 0.2s ease 0s;
   cursor: pointer;
 
   &:hover {
     filter: brightness(1.2);
+  }
+
+  &--big {
+    padding: 20px 33px;
+    height: 68px;
+  }
+
+  &--small {
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    height: 60px;
   }
 }
