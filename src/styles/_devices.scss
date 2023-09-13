@@ -1,0 +1,32 @@
+.devices {
+  padding: 5.6vw;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    &__item {
+      list-style: none;
+      text-align: center;
+
+      &__h4 {
+        margin-top: 20px;
+        margin-bottom: 24px;
+      }
+
+      &__img {
+        width: 100%;
+      }
+
+      &__inside {
+        list-style: none;
+      }
+    }
+  }
+}
