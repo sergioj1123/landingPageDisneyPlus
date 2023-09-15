@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="./dist/styles/main.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./dist/images/disneyplus.svg"
+            alt="Disney+"
+          />
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list__item">
+              <a
+                class="header__nav-list__item__link button button--header"
+                href="#"
+              >
+                Assine agora
+              </a>
+            </li>
+            <li class="header__nav-list__item">
+              <a
+                class="header__nav-list__item__link button button--header button--dark"
+                href="#"
+              >
+                Entrar
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="hero__content">
@@ -15,9 +46,9 @@
             src="dist/images/disneyplus.svg"
             alt="Disney+"
           />
-          <h1 class="hero__content__branding title--bigger">
+          <h3 class="hero__content__branding title--bigger">
             As melhores histórias em um só lugar
-          </h1>
+          </h3>
           <button class="button button--big">APROVEITE A OFERTA COMBO+</button>
           <p><a href="#" class="link-text">Assinar somente o Disney+</a></p>
         </div>
@@ -559,5 +590,6 @@
     </main>
     <script src="./main.js"></script>
     <script src="./faq.js"></script>
+    <script src="./header.js"></script>
   </body>
 </html>

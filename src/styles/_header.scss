@@ -1,0 +1,47 @@
+@use "_variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: variables.$backgroundColor;
+  transition: background-color 0.5s ease;
+  z-index: 2;
+
+  &--is-hidden {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+    .header {
+      &__logo,
+      &__nav-list__item:first-child {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;
+      }
+    }
+  }
+
+  &__container {
+    padding: 8px 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 80px;
+    margin: 5px;
+    width: 100%;
+    transition: opacity 0.5s ease;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+
+    &__item {
+      margin: 5px;
+      transition: opacity 0.5s ease;
+    }
+  }
+}

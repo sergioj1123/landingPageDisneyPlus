@@ -6,6 +6,7 @@
 @use "_devices";
 @use "_faq";
 @use "_footer";
+@use "_header";
 
 @font-face {
   font-family: Avenir;
@@ -82,6 +83,9 @@ body {
   border: none;
   transition: all 0.2s ease 0s;
   cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid variables.$buttonColor;
 
   &:hover {
     filter: brightness(1.2);
@@ -96,5 +100,23 @@ body {
     margin-top: 2vw;
     margin-bottom: 8px;
     height: 60px;
+  }
+
+  &--header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    background-color: variables.$buttonColorSecundary;
+    border-color: variables.$buttonColorSecundary;
+  }
+
+  &--dark {
+    background-color: rgba(variables.$buttonColorDark, 0.8);
+    border-color: variables.$textSecondaryColor;
+    &:hover {
+      background-color: variables.$textSecondaryColor;
+      color: variables.$backgroundColor;
+    }
   }
 }
