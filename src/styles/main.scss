@@ -44,14 +44,24 @@ body {
 
 .text--bigger {
   @include text(18px);
+
+  @media (max-width: 768px) {
+    @include text(15px);
+  }
 }
 
 .text {
   @include text;
+  @media (max-width: 768px) {
+    @include text(14px);
+  }
 }
 
 .text--small {
   @include text(12px);
+  @media (max-width: 768px) {
+    @include text(11px);
+  }
 }
 
 .link-text {
@@ -62,14 +72,23 @@ body {
 
 .title--bigger {
   @include title(44px);
+  @media (max-width: 768px) {
+    @include title(26px);
+  }
 }
 
 .title {
   @include title;
+  @media (max-width: 768px) {
+    @include title(24px);
+  }
 }
 
 .title--small {
   @include title(28px);
+  @media (max-width: 768px) {
+    @include title(22px);
+  }
 }
 
 .button {
@@ -100,6 +119,9 @@ body {
     margin-top: 2vw;
     margin-bottom: 8px;
     height: 60px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &--header {
@@ -109,6 +131,13 @@ body {
     padding: 8px 14px;
     background-color: variables.$buttonColorSecundary;
     border-color: variables.$buttonColorSecundary;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+      padding: 8px 11px;
+      height: 40px;
+      letter-spacing: 0;
+    }
   }
 
   &--dark {

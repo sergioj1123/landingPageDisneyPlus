@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./dist/styles/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--is-hidden">
       <div class="header__container">
         <h1>
           <img
@@ -272,11 +272,17 @@
         </div>
       </section>
       <section class="watch-anywhere watch-anywhere--full-img">
-        <img
-          src="./dist/images/fundo_rei_leao.png"
-          alt="Imagem do rei leão"
-          class="watch-anywhere__img watch-anywhere--full-img__img"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./dist/images/fundo_rei_leao_celular.png"
+          />
+          <img
+            src="./dist/images/fundo_rei_leao.png"
+            alt="Imagem do rei leão"
+            class="watch-anywhere__img watch-anywhere--full-img__img"
+          />
+        </picture>
         <div
           class="watch-anywhere__container watch-anywhere--full-img__container"
         >
@@ -588,8 +594,8 @@
         </div>
       </footer>
     </main>
-    <script src="./main.js"></script>
-    <script src="./faq.js"></script>
-    <script src="./header.js"></script>
+    <script src="./dist/scripts/main.js"></script>
+    <script src="./dist/scripts/header.js"></script>
+    <script src="./dist/scripts/faq.js"></script>
   </body>
 </html>

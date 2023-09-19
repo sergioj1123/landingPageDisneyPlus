@@ -9,6 +9,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    list-style: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__item {
       text-align: center;
@@ -24,6 +31,7 @@
 
       &__img {
         height: 83px;
+        width: 100%;
       }
 
       &__strong {

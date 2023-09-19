@@ -8,6 +8,12 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      white-space: nowrap;
+      overflow-x: scroll;
+      padding-left: 90px;
+    }
+
     &__button {
       color: variables.$textSecondaryColor;
       font-size: 20px;
@@ -30,6 +36,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     margin-top: 44px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     &--is-active {
       display: grid;
