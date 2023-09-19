@@ -31,8 +31,13 @@ function uglifyjs() {
 exports.default = gulp.parallel(styles, images, uglifyjs);
 exports.watch = function () {
   gulp.watch(
-    ["./src/styles/*.scss", "src/scripts/*.js"],
+    "./src/styles/*.scss",
     { ignoreInitial: false },
-    gulp.parallel(styles, uglifyjs)
+    gulp.parallel(styles)
+  );
+  gulp.watch(
+    "./src/scripts/*.js",
+    { ignoreInitial: false },
+    gulp.parallel(uglifyjs)
   );
 };
