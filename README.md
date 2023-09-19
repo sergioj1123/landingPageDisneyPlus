@@ -17,4 +17,4 @@ Esse projeto é uma página clone da Landing Page do Disney+, sendo desenvolvido
 
 **Vercel**
 
-- [Link do projeto para a Vercel]()
+- [Link do projeto para a Vercel](https://clone-disneyplus-pvyxparia-sergioj1123.vercel.app/)
